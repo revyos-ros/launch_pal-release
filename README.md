@@ -1,3 +1,26 @@
+## launch_pal (foxy) - 0.0.4-1
+
+The packages in the `launch_pal` repository were released into the `foxy` distro by running `/home/victor/.local/bin/bloom-release --rosdistro foxy --track foxy launch_pal` on `Wed, 21 Jul 2021 08:48:35 -0000`
+
+The `launch_pal` package was released.
+
+Version of package(s) in repository `launch_pal`:
+
+- upstream repository: https://github.com/pal-robotics/launch_pal.git
+- release repository: https://github.com/pal-gbp/launch_pal-release.git
+- rosdistro version: `0.0.3-1`
+- old version: `0.0.3-1`
+- new version: `0.0.4-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.7`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.21.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## launch_pal (foxy) - 0.0.3-1
 
 The packages in the `launch_pal` repository were released into the `foxy` distro by running `/usr/local/bin/bloom-release --rosdistro foxy --track foxy launch_pal` on `Wed, 30 Jun 2021 08:50:47 -0000`
