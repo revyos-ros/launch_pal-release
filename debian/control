@@ -1,0 +1,12 @@
+Source: ros-foxy-launch-pal
+Section: misc
+Priority: optional
+Maintainer: user <victor.lopez@pal-robotics.com>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest, python3-yaml, ros-foxy-ament-copyright, ros-foxy-ament-flake8, ros-foxy-ament-index-python, ros-foxy-ament-pep257, ros-foxy-launch, ros-foxy-launch-ros, ros-foxy-ros-workspace, python3-all, python3-setuptools
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-foxy-launch-pal
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, python3-yaml, ros-foxy-ament-index-python, ros-foxy-launch, ros-foxy-launch-ros, ros-foxy-ros-workspace
+Description: Utilities for launch files
