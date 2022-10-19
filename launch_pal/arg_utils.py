@@ -1,4 +1,4 @@
-# Copyright (c) 2021 PAL Robotics S.L.
+# Copyright (c) 2022 PAL Robotics S.L. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from launch.utilities import perform_substitutions
 from launch.substitutions import LaunchConfiguration
+from launch.utilities import perform_substitutions
 
 
 def read_launch_argument(arg_name, context):

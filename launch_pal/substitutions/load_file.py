@@ -1,4 +1,4 @@
-# Copyright (c) 2021 PAL Robotics S.L.
+# Copyright (c) 2022 PAL Robotics S.L. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,13 +13,13 @@
 # limitations under the License.
 
 from collections.abc import Iterable
-from launch.launch_context import LaunchContext
-from launch.substitution import Substitution
-from launch.some_substitutions_type import SomeSubstitutionsType
-from launch.utilities import (normalize_to_list_of_substitutions, ensure_argument_type,
-                              perform_substitutions)
-
 from typing import Text
+
+from launch.launch_context import LaunchContext
+from launch.some_substitutions_type import SomeSubstitutionsType
+from launch.substitution import Substitution
+from launch.utilities import (ensure_argument_type, normalize_to_list_of_substitutions,
+                              perform_substitutions)
 
 
 class LoadFile(Substitution):
@@ -43,5 +43,5 @@ class LoadFile(Substitution):
 
     def perform(self, context: LaunchContext) -> Text:
         """Perform the substitution by loading the file."""
-        with open(str(perform_substitutions(context, self.file_path)), "r") as f:
+        with open(str(perform_substitutions(context, self.file_path)), 'r') as f:
             return f.read()
