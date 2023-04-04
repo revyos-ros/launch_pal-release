@@ -2,6 +2,11 @@
 Changelog for package launch_pal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.7 (2023-04-04)
+------------------
+* added parse_parametric_yaml utils
+* Contributors: antoniobrandi
+
 0.0.6 (2022-10-19)
 ------------------
 * Merge branch 'update_copyright' into 'master'
