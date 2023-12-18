@@ -2,6 +2,67 @@
 Changelog for package launch_pal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.14 (2023-12-04)
+-------------------
+* Update style errors
+* fix typo and add type hint
+* update typo
+* Update configuration file keywords
+* Enable autocomplete for robot arguments
+* Use assertDictEqual in test
+* Type hint and use get_share_directory function
+* update readme
+* Add tests
+* Update include scoped launch for more intuitive use
+* Contributors: David ter Kuile
+
+0.0.13 (2023-11-29)
+-------------------
+* Remove triple quotes
+* Add docstrings and update README
+* Change yaml file to single quotes
+* change to double quotes to be consistent in robot config yaml
+* Update linting
+* Update tiaog config and add tiago_dual config
+* Add launch arg factory
+* Update linting
+* Add get_configuration function to robotConfig
+* Update tiago configuration
+* Add base dataclass with for launch args
+* update linting
+* Update types
+* loop over value instead of items
+* A bit of documentation
+* Add scoped launch file inclusion
+* Create function to translate setting to launch arg
+* Create initial version of robot configuration
+* Contributors: David ter Kuile
+
+0.0.12 (2023-11-14)
+-------------------
+* Add website tag
+* added support for omni_base
+* Contributors: Noel Jimenez, andreacapodacqua
+
+0.0.11 (2023-11-09)
+-------------------
+* Initial ARI support
+* autopep8 line wrapping
+* Contributors: Séverin Lemaignan
+
+0.0.10 (2023-10-10)
+-------------------
+* Merge branch 'yen/feat/pmb3_robot' into 'master'
+  Add pmb3 utils
+  See merge request common/launch_pal!18
+* feat: Add pmb3 utils
+* Contributors: YueErro
+
+0.0.9 (2023-07-07)
+------------------
+* Remove not supported choices
+* Contributors: Noel Jimenez
+
 0.0.8 (2023-06-13)
 ------------------
 * fix cast when bool equals False
