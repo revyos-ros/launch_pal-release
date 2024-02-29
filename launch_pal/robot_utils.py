@@ -20,7 +20,7 @@ def get_robot_name(default_robot_name='pmb2'):
         'robot_name',
         default_value=default_robot_name,
         description='Name of the robot. ',
-        choices=['pmb2', 'tiago', 'pmb3', 'ari', 'omni_base'])
+        choices=['pmb2', 'tiago', 'pmb3', 'ari', 'omni_base', 'tiago_pro'])
 
     return declare_robot_name
 
@@ -83,7 +83,7 @@ def get_arm(robot):
             'arm',
             default_value='tiago-arm',
             description='Which type of arm TIAGo has. ',
-            choices=['no-arm', 'tiago-arm', 'right-arm'])
+            choices=['no-arm', 'tiago-arm'])
 
     else:
         raise ValueError('The robot ' + robot + ' has not the argument arm')
