@@ -2,6 +2,16 @@
 Changelog for package launch_pal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.18 (2024-01-31)
+-------------------
+* Remove right-arm option for tiago
+* Contributors: Noel Jimenez
+
+0.0.17 (2024-01-29)
+-------------------
+* tiago_pro robot_name added in the possible choices
+* Contributors: ileniaperrella
+
 0.0.16 (2024-01-18)
 -------------------
 * removing epick
