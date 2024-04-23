@@ -2,6 +2,51 @@
 Changelog for package launch_pal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.4 (2024-04-12)
+------------------
+* Added is_public_sim action check
+* Add wheel model
+* Remove wrong realsense camera arg name
+* Contributors: David ter Kuile, Oscar, davidterkuile
+
+0.1.3 (2024-04-09)
+------------------
+* Changed arm name from sea to tiago-sea for standarization
+* Contributors: Oscar
+
+0.1.2 (2024-04-08)
+------------------
+* Avoid breaking tiago pro tests
+* Update realsense name in camera rgument
+* Contributors: David ter Kuile, davidterkuile
+
+0.1.1 (2024-03-21)
+------------------
+* Fix flake test
+* Add sensor manager as common arg
+* Contributors: David ter Kuile, davidterkuile
+
+0.1.0 (2024-03-20)
+------------------
+* Update default values
+* Remove unsupported lasers for now
+* Change common param to is_public_sim
+* Add extra common launch args
+* Add wrist model for spherical wrist
+* Add tiago pro config
+* Fixed base_type and arm_type
+* Suggested changess
+* Standarized config names
+* Configs for tiago_sea
+* Removed has_screen from tiago_sea
+* Update config to tiago sea specific arguments
+* Fixing tiago_dual_configuration
+* Velodyne param added
+* Tiago sea dual params
+* Tiago sea params
+* Create a class that contains frequently used Launch arguments to avoid mismatching Uppercase/lowercase
+* Contributors: David ter Kuile, Oscar, Oscar Martinez, davidterkuile
+
 0.0.18 (2024-01-31)
 -------------------
 * Remove right-arm option for tiago
