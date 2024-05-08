@@ -2,6 +2,17 @@
 Changelog for package launch_pal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.6 (2024-05-08)
+------------------
+* added tuck arm parameter
+* Contributors: sergiacosta
+
+0.1.5 (2024-04-26)
+------------------
+* fix tests
+* fix _parse_config to be able to have a variable between text
+* Contributors: Aina Irisarri
+
 0.1.4 (2024-04-12)
 ------------------
 * Added is_public_sim action check
