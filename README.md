@@ -2,6 +2,66 @@
 
 Utilities for simplifying some common ROS2 launch operations.
 
+## get_pal_configuration
+
+Implementation of the PAL's PAPS-007 standard for configuration management.
+
+Retrieves all the parameters, remappings and arguments for a given node by
+looking for `ament_index`-registered YAML configurations file. It properly handle
+overloading of parameters, enabling for instance to have a default configuration
+and a specific configuration for a given robot family or robot unit.
+
+### User overrides
+
+Users can provide local overrides via configuration files in
+`$HOME/.pal/config`.
+
+For instance, creating a file `~/.pal/config/default_volume.yml` with the
+content:
+
+```yaml
+/volume:
+  ros__parameters:
+    default_volume: 75
+```
+
+would override the ROS parameter `default_volume` for the node `/volume`.
+
+This is useful for eg persist user configuration across robot reboots.
+
+The default location of user configuration is `$HOME/.pal/config`. It can by
+changed by setting the environment variable `$PAL_USER_PARAMETERS_PATH`.
+
+### Usage
+
+```python
+#...
+from launch_pal import get_pal_configuration
+
+def generate_launch_description():
+
+    ld = LaunchDescription()
+
+    config = get_pal_configuration(pkg='pkg_name',
+                                   node='node_name', 
+                                   ld=ld, # optional; only used for logging
+                                   )
+    my_node = Node(
+        name='node_name',
+        namespace='',
+        package='pkg_name',
+        executable='node_executable',
+        parameters=config['parameters'],
+        remappings=config['remappings'],
+        arguments=config['arguments'],
+    )
+
+    # ...
+
+    ld.add_action(my_node)
+
+    return ld
+```
 
 ## robot_arguments
 Contains classes to read launch argument settings directly from a YAML file, grouped per robot type. For each argument the name, the description, default value and possible choices are provided. The classes can be imported to remove boilerplate of robot launch arguments. 
@@ -70,6 +130,37 @@ Contains utilities to reduce the boilerplate necessary for including files.
 **NOTE:**
 This mimics the behavior of including launch files in ROS 1. Helpful in large launch files structures to avoid launch arguments to be overwritten by accident.
 
+## composition_utils
+Contains utilities to reduce the boilerplate necessary for using ROS 2 components
+
+`generate_component_list`: generates a list of composable nodes from a YAML and a package name, ready to be added or loaded into a ComposableNodeContainer: 
+
+```yaml
+components:
+  <COMPONENT-NAME>:
+    type: <DIAGNOSTIC-TYPE>
+      ros__parameters: 
+        name: <FULL-DIAGNOSTIC_DESCRIPTOR>
+        [<REST-OF-PARAMS>]
+```
+
+It can be used from a launch file like:
+
+```python
+component_list = generate_component_list(components_yaml, pkg_name)
+```
+
+And then added normally to a container:
+
+```python
+container = ComposableNodeContainer(
+    name="container_name",
+    namespace="",
+    package="rclcpp_components",
+    executable="component_container",
+    composable_node_descriptions=component_list,
+)
+```
 
 ## robot_utils (DEPRECATED)
 Declare a single launch argument given by the robot name. 
