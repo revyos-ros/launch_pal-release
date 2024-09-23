@@ -2,6 +2,136 @@
 Changelog for package launch_pal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.5.0 (2024-09-17)
+------------------
+* add deprecation note to the robot_utils methods
+* Contributors: Sai Kishor Kothakota
+
+0.4.0 (2024-08-28)
+------------------
+* add tests for namespace
+* add namespaces option when including launch file
+* Contributors: thomasung
+
+0.3.0 (2024-08-06)
+------------------
+* Add talos and kangaroo as robots
+* Contributors: Adria Roig
+
+0.2.0 (2024-08-05)
+------------------
+* [test] make sure changing AMENT_PREFIX_PATH does not spill out of the tests
+* PAPS-007: better logging for invalid user configuration files
+* get_pal_parameters: improved logging
+  In particular, list all the configuration files found for the node, by order of precedence
+* PAPS-007 - get_pal_parameters: add support for user configuration in ~/.pal/config
+  The location of user configuration can be overridden via envvar
+  $PAL_USER_PARAMETERS_PATH.
+* Contributors: Séverin Lemaignan
+
+0.1.15 (2024-07-04)
+-------------------
+* Merge branch 'omm/feat/composition_utils' into 'master'
+  Composition utils
+  See merge request common/launch_pal!38
+* Added package field for extended usability
+* Readme and new type variable name
+* Removing pal_computer_monitor dep
+* Composition utils to generate containers from a yaml files
+* Merge branch 'paps007' into 'master'
+  Add implementation of PAPS-007 'get_pal_configuration'
+  See merge request common/launch_pal!57
+* add impl of PAPS-007 'get_pal_configuration'
+* Merge branch 'abr/feat/advanced-navigation' into 'master'
+  added advanced navigation
+  See merge request common/launch_pal!58
+* added advanced navigation
+* Contributors: Noel Jimenez, Oscar, Séverin Lemaignan, antoniobrandi, davidterkuile
+
+0.1.14 (2024-07-03)
+-------------------
+* Merge branch 'air/feat/add_slam' into 'master'
+  add slam param
+  See merge request common/launch_pal!60
+* fix declare slam
+* add slam param
+* Merge branch 'feature/tiago-dual-support' into 'master'
+  feat: add robot_name arg to CommonArgs
+  See merge request common/launch_pal!59
+* feat: add robot_name to CommonArgs
+* feat: tiago dual support
+* Contributors: Aina, davidterkuile, josegarcia
+
+0.1.13 (2024-06-26)
+-------------------
+* Merge branch 'dtk/move-robot-args' into 'master'
+  Dtk/move robot args
+  See merge request common/launch_pal!56
+* Remove robot configurations
+* ArgFactory class to create launch args from yaml
+* Move common args
+* Contributors: David ter Kuile, davidterkuile
+
+0.1.12 (2024-06-11)
+-------------------
+* Update Changelog
+* Merge branch 'tpe/upate_std_and_launch_arg' into 'master'
+  update lauch args for the omni base
+  See merge request common/launch_pal!55
+* update lauch args for the omni base
+* Contributors: David ter Kuile, davidterkuile, thomas.peyrucain
+
+* Merge branch 'tpe/upate_std_and_launch_arg' into 'master'
+  update lauch args for the omni base
+  See merge request common/launch_pal!55
+* update lauch args for the omni base
+* Contributors: davidterkuile, thomas.peyrucain
+
+0.1.11 (2024-05-28)
+-------------------
+* Merge branch 'feat/aca/find-pkg-share-yaml' into 'master'
+  Feat/aca/find pkg share yaml
+  See merge request common/launch_pal!54
+* linters
+* linters
+* linters
+* added import, modified explication
+* extend _parse_config functionality
+* Contributors: andreacapodacqua, davidterkuile
+
+0.1.10 (2024-05-17)
+-------------------
+* Merge branch 'omm/feat/rgdb_sensors_rename' into 'master'
+  Proper courier_rgbd_sensor name
+  See merge request common/launch_pal!52
+* Proper courier_rgbd_sensor name
+* Contributors: davidterkuile, oscarmartinez
+
+0.1.9 (2024-05-16)
+------------------
+* Merge branch 'VKG/fix/screen-parameters' into 'master'
+  fixed screen parameters, edited configuration and robot argument files
+  See merge request common/launch_pal!51
+* typo fixed
+* fixed screen parameters, edited configuration and robot argument files
+* Contributors: Vamsi GUDA, davidterkuile
+
+0.1.8 (2024-05-15)
+------------------
+* Merge branch 'omm/common_pos_args' into 'master'
+  Robot position args added to common
+  See merge request common/launch_pal!50
+* Robot position args added to common
+* Contributors: davidterkuile, oscarmartinez
+
+0.1.7 (2024-05-09)
+------------------
+* Merge branch 'dtk/fix/bool-args' into 'master'
+  Set all boolean robot args to capital value
+  See merge request common/launch_pal!49
+* Set all boolean robot args to capital value
+* Contributors: Noel Jimenez, davidterkuile
+
 0.1.6 (2024-05-08)
 ------------------
 * added tuck arm parameter
