@@ -2,6 +2,47 @@
 Changelog for package launch_pal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.9.0 (2024-12-02)
+------------------
+* Merge branch 'abr/feat/docking' into 'master'
+  added docking args
+  See merge request common/launch_pal!73
+* added docking args
+* Merge branch 'upt/tun/readme' into 'master'
+  update robot_arguments readme section
+  See merge request common/launch_pal!71
+* remove internal gitlab links
+* fix linting issues
+* update robot_arguments readme section
+* Contributors: antoniobrandi, davidterkuile, thomasung
+
+0.8.0 (2024-11-11)
+------------------
+* Suggestions apply
+* Added xacro missing arg warning
+* Removing unnecesary parsing
+* Launch arguments check
+* Xacro args checker
+* Contributors: oscarmartinez
+
+0.7.0 (2024-10-16)
+------------------
+* update README iwith get_pal_configuration automatic arguments
+* [pal_get_params] ensure we get the default values for nested parameters
+* [get_pal_parm] automatically creates cmdline arguments for node params
+  This is controlled by the 'cmdline_args' param of :
+  - cmdline_args=True (default): create cmd line arguments for all params
+  - cmdline_args=[...]: create cmdline arguments for the listed params
+  - cmdline_args=False: do not create cmdline arguments
+* [get_pal_param] show config files from high to lower precedence
+  This is a more natural order in practise
+* Contributors: Séverin Lemaignan
+
+0.6.0 (2024-09-26)
+------------------
+* Add tool_changer arg
+* Contributors: thomas.peyrucain
+
 0.5.0 (2024-09-17)
 ------------------
 * add deprecation note to the robot_utils methods
