@@ -2,6 +2,22 @@
 Changelog for package launch_pal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.11.0 (2025-02-04)
+-------------------
+* Add comments
+* fix ament_pep8 linting
+* add generic string substitution concat
+* Contributors: thomasung
+
+0.10.0 (2025-01-20)
+-------------------
+* Update wrong return value
+* Apply suggestion after review
+* Apply 1 suggestion(s) to 1 file(s)
+* Add jinja2 dependency
+* Add master calibration implementation
+* Contributors: David ter Kuile, antoniobrandi
+
 0.9.0 (2024-12-02)
 ------------------
 * Merge branch 'abr/feat/docking' into 'master'
