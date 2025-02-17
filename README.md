@@ -1,3 +1,26 @@
+## launch_pal (humble) - 0.11.0-1
+
+The packages in the `launch_pal` repository were released into the `humble` distro by running `/home/z572/gits/revyos-ros/venv2/bin/bloom-release -r humble launch_pal --override-release-repository-push-url git@github.com:revyos-ros/launch_pal-release.git` on `Mon, 17 Feb 2025 02:01:39 -0000`
+
+The `launch_pal` package was released.
+
+Version of package(s) in repository `launch_pal`:
+
+- upstream repository: https://github.com/pal-robotics/launch_pal.git
+- release repository: https://github.com/revyos-ros/launch_pal-release.git
+- rosdistro version: `0.10.0-1`
+- old version: `0.9.0-1`
+- new version: `0.11.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## launch_pal (humble) - 0.9.0-1
 
 The packages in the `launch_pal` repository were released into the `humble` distro by running `/home/z572/gits/revyos-ros/venv2/bin/bloom-release -r humble launch_pal --override-release-repository-push-url git@github.com:revyos-ros/launch_pal-release.git` on `Sun, 15 Dec 2024 03:27:30 -0000`
